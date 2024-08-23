@@ -1,0 +1,276 @@
+/* Navbar */
+.logo-light {
+    content:url('./../images/logo-vapeboss-baru.png')
+}
+
+.logo-dark {
+    content:url('./../images/logo-vapeboss-baru-light.png')
+}
+
+.navbar {
+    transition: all 0.2s
+}
+
+/* Body Global */
+.section {
+    min-height: 100vh;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.section-img img {
+    width: 70%;
+}
+
+.section-content {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 1.5em;
+}
+
+.section-content p {
+    text-align: justify;
+    line-height: 2;
+    font-size: 16px;
+}
+
+#section-2, #section-3, #section-4, #section-5, #section-6 {
+    padding: 3rem;
+}
+
+#section-4, #section-6 {
+    background-color: black;
+    color: white;
+}
+
+hr {
+    margin-left: 5% !important;
+    width: 90% !important;
+}
+
+.separator {
+    display: none;
+}
+
+#section-3 .separator, #section-5 .separator {
+    display: block;
+    text-align: center;
+}
+
+#section-3 .separator img, #section-5 .separator img {
+    width: 60vh !important;
+}
+
+@media (min-width: 1200px) {
+    .separator {
+        display: block;
+        text-align: center;
+    }
+    
+    .separator img {
+        width: 60vh;
+    }
+
+    .section-img {
+        margin-top: 0;
+    }
+
+    .section-img img {
+        width: 100%;
+    }
+
+    .section-content {
+        margin-top: 0;
+    }
+
+    .section-content p {
+        font-size: 18px;
+    }
+}
+
+
+/* Section 1 */
+#section-1 .carousel-item {
+    height: 100vh;
+    text-align: center;
+}
+
+#section-1 .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(40%)
+}
+
+#section-1-caption {
+    bottom: 20%;
+    top: 20%;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#section-1-caption img {
+    width: 18vw;
+    height: auto;
+}
+
+#section-1-caption h1 {
+    margin-top: -0.5em;
+}
+
+@media (min-width: 1200px) {
+    #section-1-caption {
+        right: 25%;
+        left: 25%;
+    }
+}
+
+/* Section 3 */
+
+#section-3 .section-content p .content-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#section-3 .section-img img {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    #section-3 .section-img img {
+        width: 70%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    #section-3 .section-content p .content-title {
+        font-size: 20px;
+    }
+
+    #section-3 .section-img img {
+        width: 100%;
+    }
+}
+
+/* Section 4 */
+.news-list {
+    padding: 1em;
+}
+
+.news-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    background-color: white;
+    border-radius: 15px 15px 0px 0px;
+}
+
+.news-img img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.news-content {
+    background-color: white;
+    color: black;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.news-content p {
+    line-height: 2;
+    font-size: 16px;
+    margin-top: 0.8em;
+    margin-bottom: 1.5em;
+    height: 100px;
+}
+
+.news-content h5 {
+    font-size: 18px;
+    font-weight: bolder;
+    float: none;
+}
+
+@media (min-width: 1200px) {
+    .news-img {
+        padding-left: 1.5em;
+        border-radius: 15px 0px 0px 15px;
+    }
+
+    .news-content {
+        padding-top: 40px !important;
+        border-radius: 0px 15px 15px 0px;
+    }
+
+    .news-content p {
+        font-size: 18px;
+    }
+
+    .news-content h5 {
+        font-size: 20px;
+        float: left;
+        margin-right: 0.8em;
+    }
+}
+
+/* Section 6 */
+#section-6 {
+    min-height: 0;
+    height: auto;
+    border-bottom: 1px solid rgb(68, 68, 68);
+}
+
+.contact-us-logo {
+    text-align: center;
+}
+
+.contact-us-logo img {
+    width: 40%;
+    height: auto;
+}
+
+.contact-us img {
+    float: left;
+    width: 45px;
+    height: 45px;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin-right: 1.2em;
+    margin-top: 0.5em;
+}
+
+.contact-us img:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 1199px) {
+    .contact-us-logo {
+        margin-bottom: 2em;
+    }
+}
+
+/* Footer */
+.footer {
+    padding: 0.8em;
+    color: white;
+    background-color: black;
+    text-align: center;
+}

@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vapeboss</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="./css/google_icons.css">
+    <link rel="stylesheet" href="./fontawesome/css/solid.css">
+    <link rel="stylesheet" href="./css/vapeboss.css">
+
+    <!-- Javascript -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top border-body bg-light" data-spy="affix">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./home.html">
+                <img src="./images/logo-vapeboss-baru.png" alt="" height="50" class="d-inline-block align-text-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#shop" aria-current="page">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#news">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#career">Career</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#our-store">Our Store</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#register" class="nav-link">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#login" class="nav-link">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-5 pt-5">
+        <div class="row">
+            <!-- Search -->
+            <div class="col-md-6 col-sm-12 offset-md-3">
+                <div class="input-group position-relative d-inline-flex align-items-center">
+                    <input type="text" name="vbSearch" id="vb-search" class="form-control" placeholder="Search...">
+                    <i class="fa-solid fa-xmark position-absolute" id="vb-clear-search"></i>
+                    <button class="btn btn-outline-dark" type="button">Search</button>
+                </div>
+            </div>
+
+            <div class="col-12 mt-3">
+                <button class="btn btn-outline-dark" id="vb-btn-filter">
+                    <i class="fa-solid fa-filter"></i>
+                </button>
+            </div>
+
+            <!-- Filter -->
+            <div class="col-sm-12 col-lg-3 mt-2 p-4 pe-0" id="vb-filter">
+                <h5 class="mb-3">Kategori</h5>
+                <div class="form-checkbox">
+                    <div class="form-group">
+                        <input type="checkbox" name="vbFilterDevice" class="form-check-input">
+                        <label for="vbFilterDevice" class="form-check-label">
+                            Device
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="vbFilterFreebase" class="form-check-input">
+                        <label for="vbFilterFreebase" class="form-check-label">
+                            Liquid Freebase
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="vbFilterSaltnic" class="form-check-input">
+                        <label for="vbFilterSaltnic" class="form-check-label">
+                            Liquid Saltnic
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="vbFilterCoil" class="form-check-input">
+                        <label for="vbFilterCoil" class="form-check-label">
+                            Coil / Catridge
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name="vbFilterAccessories" class="form-check-input">
+                        <label for="vbFilterAccessories" class="form-check-label">
+                            Accessories
+                        </label>
+                    </div>
+                </div>
+                <div class="cb"></div>
+                <button class="btn btn-outline-dark">Filter</button>
+            </div>
+
+            <!-- Content -->
+            <div class="col-sm-12 col-lg-9 row" id="vb-shop-item">
+                <div class="col-6 col-md-4 col-lg-3 vb-item">
+                    <img class="vb-item-image" src="./images/Dummy Pict.jpeg" alt="">
+                    <p class="vb-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatem.</p>
+                    <div class="vb-price">Rp. 500,000</div>
+                    <div class="vb-rate">
+                        <img src="images/star.svg" class="vb-rate-icon">
+                        <span class="vb-rate-value">4.9</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 vb-item">
+                    <img class="vb-item-image" src="./images/Dummy Pict.jpeg" alt="">
+                    <p class="vb-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatem.</p>
+                    <div class="vb-price">Rp. 500,000</div>
+                    <div class="vb-rate">
+                        <img src="images/star.svg" class="vb-rate-icon">
+                        <span class="vb-rate-value">4.9</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 vb-item">
+                    <img class="vb-item-image" src="./images/Dummy Pict.jpeg" alt="">
+                    <p class="vb-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatem.</p>
+                    <div class="vb-price">Rp. 500,000</div>
+                    <div class="vb-rate">
+                        <img src="images/star.svg" class="vb-rate-icon">
+                        <span class="vb-rate-value">4.9</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 vb-item">
+                    <img class="vb-item-image" src="./images/Dummy Pict.jpeg" alt="">
+                    <p class="vb-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatem.</p>
+                    <div class="vb-price">Rp. 500,000</div>
+                    <div class="vb-rate">
+                        <img src="images/star.svg" class="vb-rate-icon">
+                        <span class="vb-rate-value">4.9</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 vb-item">
+                    <img class="vb-item-image" src="./images/Dummy Pict.jpeg" alt="">
+                    <p class="vb-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatem.</p>
+                    <div class="vb-price">Rp. 500,000</div>
+                    <div class="vb-rate">
+                        <img src="images/star.svg" class="vb-rate-icon">
+                        <span class="vb-rate-value">4.9</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 vb-item">
+                    <img class="vb-item-image" src="./images/Dummy Pict.jpeg" alt="">
+                    <p class="vb-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatem.</p>
+                    <div class="vb-price">Rp. 500,000</div>
+                    <div class="vb-rate">
+                        <img src="images/star.svg" class="vb-rate-icon">
+                        <span class="vb-rate-value">4.9</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 vb-item">
+                    <img class="vb-item-image" src="./images/Dummy Pict.jpeg" alt="">
+                    <p class="vb-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatem.</p>
+                    <div class="vb-price">Rp. 500,000</div>
+                    <div class="vb-rate">
+                        <img src="images/star.svg" class="vb-rate-icon">
+                        <span class="vb-rate-value">4.9</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 vb-item">
+                    <img class="vb-item-image" src="./images/Dummy Pict.jpeg" alt="">
+                    <p class="vb-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatem.</p>
+                    <div class="vb-price">Rp. 500,000</div>
+                    <div class="vb-rate">
+                        <img src="images/star.svg" class="vb-rate-icon">
+                        <span class="vb-rate-value">4.9</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 vb-item">
+                    <img class="vb-item-image" src="./images/Dummy Pict.jpeg" alt="">
+                    <p class="vb-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatem.</p>
+                    <div class="vb-price">Rp. 500,000</div>
+                    <div class="vb-rate">
+                        <img src="images/star.svg" class="vb-rate-icon">
+                        <span class="vb-rate-value">4.9</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 vb-item">
+                    <img class="vb-item-image" src="./images/Dummy Pict.jpeg" alt="">
+                    <p class="vb-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatem.</p>
+                    <div class="vb-price">Rp. 500,000</div>
+                    <div class="vb-rate">
+                        <img src="images/star.svg" class="vb-rate-icon">
+                        <span class="vb-rate-value">4.9</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 vb-item">
+                    <img class="vb-item-image" src="./images/Dummy Pict.jpeg" alt="">
+                    <p class="vb-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatem.</p>
+                    <div class="vb-price">Rp. 500,000</div>
+                    <div class="vb-rate">
+                        <img src="images/star.svg" class="vb-rate-icon">
+                        <span class="vb-rate-value">4.9</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 vb-item">
+                    <img class="vb-item-image" src="./images/Dummy Pict.jpeg" alt="">
+                    <p class="vb-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, voluptatem.</p>
+                    <div class="vb-price">Rp. 500,000</div>
+                    <div class="vb-rate">
+                        <img src="images/star.svg" class="vb-rate-icon">
+                        <span class="vb-rate-value">4.9</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Float action button -->
+    <a href="./cart.html">
+        <button type="button" class="btn btn-lg btn-dark float-button me-3 mb-3">
+            <i class="material-icons">shopping_cart</i>
+        </button>
+    </a>
+
+    <script src="./js/shop.js"></script>
+</body>
+</html>

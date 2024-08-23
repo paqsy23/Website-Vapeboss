@@ -1,0 +1,131 @@
+body {
+    font-family: Baskerville;
+}
+
+#vb-clear-search {
+    right: 85px;
+    cursor: pointer;
+    z-index: 100;
+    display: none;
+}
+
+#vb-filter {
+    display: none;
+}
+
+#vb-btn-filter {
+    float: left;
+    display: block;
+}
+
+.cb {
+    clear: both;
+}
+
+.form-group {
+    float: left;
+    margin-bottom: 0.8em;
+}
+
+.form-check-input {
+    border: 1px solid black;
+    margin-right: 0.5em
+}
+
+.form-check-label {
+    margin-right: 1.5em
+}
+
+#vb-shop-item {
+    margin-top: 1em;
+    height: 72vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.vb-item {
+    padding: 0 0.5em;
+    margin-bottom: 1em;
+}
+
+.vb-item .vb-item-image {
+    width: 100%;
+}
+
+.vb-item .vb-title {
+    margin-top: 0.8em;
+}
+
+.vb-item p {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 0;
+}
+
+.has-overflow:after {
+    content: "..."
+}
+
+.vb-item .vb-price {
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.vb-item .vb-rate {
+    margin-top: 0.5em;
+    line-height: 1.15;
+}
+
+.vb-item .vb-rate .vb-rate-icon {
+    width: 16px;
+    height: 16px;
+    float: left;
+}
+
+.vb-item .vb-rate .vb-rate-value {
+    margin-left: 0.5em;
+    float: left;
+    font-size: 14px;
+}
+
+@media (min-width: 992px) {
+    #vb-filter {
+        display: block;
+    }
+
+    #vb-btn-filter {
+        display: none;
+    }
+}
+
+.float-button {
+    position: fixed;
+    border-radius: 100%;
+    width: 3.5em;
+    height: 3.5em;
+    bottom: 0;
+    right: 0;
+}
+
+.del-btn:hover { cursor: pointer; }
+
+#delivery-address {
+    cursor: pointer;
+}
+    
+/* gmpx-split-layout {
+    height: 400px
+} */
+    
+gmpx-split-layout:not(:defined) {
+    visibility: hidden;
+}
+    
+.panel {
+    background: white;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
